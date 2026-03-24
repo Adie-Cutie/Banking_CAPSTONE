@@ -1,8 +1,9 @@
 import axios from 'axios';
 
+// Change the port to 5001 if your backend is running there
 const API = axios.create({ baseURL: 'http://localhost:3000/api' });
 
-// Automatically attach JWT token to every request if it exists
+// This interceptor attaches the Token to every single request automatically
 API.interceptors.request.use((req) => {
   const token = localStorage.getItem('token');
   if (token) {
@@ -11,7 +12,4 @@ API.interceptors.request.use((req) => {
   return req;
 });
 
-export const login = (formData) => API.post('/auth/login', formData);
-export const register = (formData) => API.post('/auth/register', formData);
-export const fetchAccounts = () => API.get('/accounts/my-accounts');
-export const transferMoney = (data) => API.post('/accounts/transfer', data);
+export default API;

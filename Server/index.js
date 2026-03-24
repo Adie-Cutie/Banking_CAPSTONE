@@ -1,28 +1,33 @@
+// 
+
 const express = require('express');
 const cors = require('cors');
-const sequelize = require('./config/db');
+const connectDB = require('./config/db'); // Import the function
+const authRoutes = require('./routes/authRoutes');
+const transactionRoutes=require('./routes/transactionRoutes');
 require('dotenv').config();
-const authRoutes=require('./routes/authRoutes');
-const accountRoutes=require('./routes/accountRoutes');
-const {syncDb}=require('./models/index');
+
+connectDB();
+
 const app = express();
-
-
-
-// Middleware
 app.use(cors());
-app.use(express.json()); // Allows the app to read JSON from requests
-app.use('/api/auth',authRoutes);
-app.use('/api/accounts',accountRoutes);
+app.use(express.json());
 
-// Test Database Connection
-sequelize.authenticate()
-  .then(() => console.log('✅ Banking Database Connected...'))
-  .catch(err => console.log('❌ Error: ' + err));
-
-syncDb().then(()=>{
-  const PORT = process.env.PORT || 5000;
-  app.listen(PORT, () => {
-    console.log(`🚀 Server running on http://localhost:${PORT}`);
-  });
+// TEMPORARY DEBUG ROUTE
+app.post('/test', (req, res) => {
+    console.log("Body received:", req.body);
+    res.json({ message: "Server is receiving POST requests!" });
 });
+
+//routes
+console.log("Loading Auth Routes...");
+app.use('/api/auth', authRoutes);
+app.use('/api/transactions',transactionRoutes);
+
+
+app.get('/', (req, res) => {
+  res.send('Banking API is running...');
+});
+
+const PORT = process.env.PORT || 5001;
+app.listen(PORT, () => console.log(`Server running on port http://localhost:${PORT}`));
