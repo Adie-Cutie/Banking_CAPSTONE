@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+const AxeBuilder = require('@axe-core/playwright').default;
 
 test.describe.serial('Auth Module - API Test Cases', () => {
   let authToken;
@@ -85,6 +86,16 @@ test.describe.serial('Auth Module - API Test Cases', () => {
     expect(accNum).toHaveLength(10);
   });
 
-
-
 });
+
+
+test.describe('homepage',()=>{
+  test('Accessibility Test',async({page})=>{
+    await page.goto("${baseURL}");
+    const asr=await new AxeBuilder({page}).analyze();
+    console.log(asr.violations)
+    expect(asr.violations.length).toBe(3);
+  });
+
+
+}); 
