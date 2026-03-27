@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test.describe.serial('Auth Module - 15 API Test Cases', () => {
+test.describe.serial('Auth Module - API Test Cases', () => {
   let authToken;
   const testUser = {
     name: "Aditi",
