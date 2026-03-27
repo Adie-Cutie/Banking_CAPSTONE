@@ -1,0 +1,4 @@
+DEBUG: Actual API Response -> {
+  message: 'User registered successfully',
+  accountNumber: '5118348057'
+}
