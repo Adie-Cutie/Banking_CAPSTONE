@@ -6,6 +6,10 @@ exports.transferMoney = async (req, res) => {
     const { receiverAccountNumber, amount } = req.body;
     const senderId = req.user.id; // We'll get this from the JWT later
     const amountToTransfer = Number(amount);
+    if (isNaN(amountToTransfer) || amountToTransfer <= 0) {
+      return res.status(400).json({ message: "Invalid amount. Must be greater than zero." });
+    }
+    
 
     // 1. Find Sender & Receiver
     const sender = await User.findById(senderId);
