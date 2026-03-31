@@ -1,0 +1,62 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - complementary [ref=e5]:
+    - generic [ref=e6]:
+      - img [ref=e7]
+      - heading "IBM BANK" [level=1] [ref=e10]
+    - navigation [ref=e11]:
+      - button "Overview" [ref=e12]:
+        - img [ref=e13]
+        - text: Overview
+      - button "History" [ref=e16]:
+        - img [ref=e17]
+        - text: History
+    - button "Logout" [ref=e21]:
+      - img [ref=e22]
+      - text: Logout
+  - main [ref=e26]:
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - heading "Hello, John Doe 👋" [level=2] [ref=e29]
+        - paragraph [ref=e30]: "Acc: 4141587793"
+      - button "Send Money" [ref=e31]:
+        - img [ref=e32]
+        - text: Send Money
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - generic [ref=e37]:
+          - paragraph [ref=e38]: Total Balance
+          - heading "$7,501,122,128.35" [level=3] [ref=e39]
+        - generic [ref=e40]:
+          - generic [ref=e41]:
+            - paragraph [ref=e42]: Income
+            - heading "+$51" [level=4] [ref=e43]
+          - img [ref=e45]
+        - generic [ref=e48]:
+          - generic [ref=e49]:
+            - paragraph [ref=e50]: Expenses
+            - heading "-$103,658.65" [level=4] [ref=e51]
+          - img [ref=e53]
+      - generic [ref=e56]:
+        - generic [ref=e57]: Recent Activity
+        - table [ref=e58]:
+          - rowgroup [ref=e59]:
+            - row "transfer -$10" [ref=e60]:
+              - cell "transfer" [ref=e61]:
+                - img [ref=e62]
+                - generic [ref=e65]: transfer
+              - cell "-$10" [ref=e66]
+            - row "transfer -$25" [ref=e67]:
+              - cell "transfer" [ref=e68]:
+                - img [ref=e69]
+                - generic [ref=e72]: transfer
+              - cell "-$25" [ref=e73]
+            - row "transfer -$10" [ref=e74]:
+              - cell "transfer" [ref=e75]:
+                - img [ref=e76]
+                - generic [ref=e79]: transfer
+              - cell "-$10" [ref=e80]
+        - button "View All History" [ref=e81]
+```
