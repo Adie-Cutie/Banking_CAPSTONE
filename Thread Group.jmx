@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.6.3">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan">
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+    </TestPlan>
+    <hashTree>
+      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename">C:\Users\Administrator\Documents\IBM_FullStack\Banking_CAPSTONE\Thread Group.jmx</stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group">
+        <intProp name="ThreadGroup.num_threads">2</intProp>
+        <intProp name="ThreadGroup.ramp_time">1</intProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
+          <stringProp name="LoopController.loops">10</stringProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login Test">
+          <stringProp name="TestPlan.comments">Performance Test for Login</stringProp>
+          <stringProp name="HTTPSampler.domain">localhost</stringProp>
+          <stringProp name="HTTPSampler.port">3000</stringProp>
+          <stringProp name="HTTPSampler.path">/api/auth/login</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;email&quot;:&quot;john@example.com&quot;,&#xd;
+  &quot;password&quot;:&quot;password123&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Content-Type</stringProp>
+              <stringProp name="Header.value">application/json</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Registration Test">
+          <stringProp name="TestPlan.comments">Performance test for Registration</stringProp>
+          <stringProp name="HTTPSampler.domain">localhost</stringProp>
+          <stringProp name="HTTPSampler.port">3000</stringProp>
+          <stringProp name="HTTPSampler.path">/api/auth/register</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+	&quot;name&quot;: &quot;Yuie&quot;,&#xd;
+	&quot;email&quot;: &quot;yuie@example.com&quot;,&#xd;
+	&quot;password&quot;: &quot;1234567890&quot;&#xd;
+}&#xd;
+</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
+1774949451230,128,Login Test,200,OK,Thread Group 1-1,text,true,,568,247,1,1,http://localhost:3000/api/auth/login,128,0,1
+1774949451359,168,Registration Test,201,Created,Thread Group 1-1,text,true,,343,269,1,1,http://localhost:3000/api/auth/register,168,0,0
+1774949451527,178,Login Test,200,OK,Thread Group 1-1,text,true,,568,247,1,1,http://localhost:3000/api/auth/login,178,0,0
+1774949451706,29,Registration Test,400,Bad Request,Thread Group 1-1,text,false,,309,269,2,2,http://localhost:3000/api/auth/register,29,0,0
+1774949451736,241,Login Test,200,OK,Thread Group 1-1,text,true,,568,247,2,2,http://localhost:3000/api/auth/login,241,0,0
+1774949451735,266,Login Test,200,OK,Thread Group 1-2,text,true,,568,247,2,2,http://localhost:3000/api/auth/login,266,0,2
+1774949452002,30,Registration Test,400,Bad Request,Thread Group 1-2,text,false,,309,269,2,2,http://localhost:3000/api/auth/register,29,0,0
+1774949451978,65,Registration Test,400,Bad Request,Thread Group 1-1,text,false,,309,269,2,2,http://localhost:3000/api/auth/register,65,0,0
+1774949452032,268,Login Test,200,OK,Thread Group 1-2,text,true,,568,247,2,2,http://localhost:3000/api/auth/login,268,0,0
+1774949452044,298,Login Test,200,OK,Thread Group 1-1,text,true,,568,247,2,2,http://localhost:3000/api/auth/login,298,0,0
+1774949452343,29,Registration Test,400,Bad Request,Thread Group 1-1,text,false,,309,269,2,2,http://localhost:3000/api/auth/register,29,0,0
+1774949452301,81,Registration Test,400,Bad Request,Thread Group 1-2,text,false,,309,269,2,2,http://localhost:3000/api/auth/register,81,0,0
+1774949452372,241,Login Test,200,OK,Thread Group 1-1,text,true,,568,247,2,2,http://localhost:3000/api/auth/login,241,0,0
+1774949452382,233,Login Test,200,OK,Thread Group 1-2,text,true,,568,247,2,2,http://localhost:3000/api/auth/login,233,0,0
+1774949452615,29,Registration Test,400,Bad Request,Thread Group 1-2,text,false,,309,269,2,2,http://localhost:3000/api/auth/register,28,0,0
+1774949452614,43,Registration Test,400,Bad Request,Thread Group 1-1,text,false,,309,269,2,2,http://localhost:3000/api/auth/register,43,0,0
+1774949452644,129,Login Test,200,OK,Thread Group 1-2,text,true,,568,247,2,2,http://localhost:3000/api/auth/login,129,0,0
+1774949452657,233,Login Test,200,OK,Thread Group 1-1,text,true,,568,247,2,2,http://localhost:3000/api/auth/login,233,0,0
+1774949452890,28,Registration Test,400,Bad Request,Thread Group 1-1,text,false,,309,269,2,2,http://localhost:3000/api/auth/register,28,0,0
+1774949452773,157,Registration Test,400,Bad Request,Thread Group 1-2,text,false,,309,269,2,2,http://localhost:3000/api/auth/register,157,0,0
+1774949452919,238,Login Test,200,OK,Thread Group 1-1,text,true,,568,247,2,2,http://localhost:3000/api/auth/login,238,0,0
+1774949452931,253,Login Test,200,OK,Thread Group 1-2,text,true,,568,247,2,2,http://localhost:3000/api/auth/login,253,0,0
+1774949453184,30,Registration Test,400,Bad Request,Thread Group 1-2,text,false,,309,269,2,2,http://localhost:3000/api/auth/register,30,0,0
+1774949453158,68,Registration Test,400,Bad Request,Thread Group 1-1,text,false,,309,269,2,2,http://localhost:3000/api/auth/register,68,0,0
+1774949453214,266,Login Test,200,OK,Thread Group 1-2,text,true,,568,247,2,2,http://localhost:3000/api/auth/login,266,0,0
+1774949453227,270,Login Test,200,OK,Thread Group 1-1,text,true,,568,247,2,2,http://localhost:3000/api/auth/login,270,0,0
+1774949453497,29,Registration Test,400,Bad Request,Thread Group 1-1,text,false,,309,269,2,2,http://localhost:3000/api/auth/register,29,0,0
+1774949453481,57,Registration Test,400,Bad Request,Thread Group 1-2,text,false,,309,269,2,2,http://localhost:3000/api/auth/register,57,0,0
+1774949453526,237,Login Test,200,OK,Thread Group 1-1,text,true,,568,247,2,2,http://localhost:3000/api/auth/login,237,0,0
+1774949453539,241,Login Test,200,OK,Thread Group 1-2,text,true,,568,247,2,2,http://localhost:3000/api/auth/login,241,0,0
+1774949453781,28,Registration Test,400,Bad Request,Thread Group 1-2,text,false,,309,269,2,2,http://localhost:3000/api/auth/register,28,0,0
+1774949453764,57,Registration Test,400,Bad Request,Thread Group 1-1,text,false,,309,269,2,2,http://localhost:3000/api/auth/register,57,0,0
+1774949453810,280,Login Test,200,OK,Thread Group 1-2,text,true,,568,247,2,2,http://localhost:3000/api/auth/login,280,0,0
+1774949453821,285,Login Test,200,OK,Thread Group 1-1,text,true,,568,247,2,2,http://localhost:3000/api/auth/login,285,0,0
+1774949454107,28,Registration Test,400,Bad Request,Thread Group 1-1,text,false,,309,269,2,2,http://localhost:3000/api/auth/register,28,0,0
+1774949454090,58,Registration Test,400,Bad Request,Thread Group 1-2,text,false,,309,269,1,1,http://localhost:3000/api/auth/register,58,0,0
+1774949454148,153,Login Test,200,OK,Thread Group 1-2,text,true,,568,247,1,1,http://localhost:3000/api/auth/login,153,0,0
+1774949454301,44,Registration Test,400,Bad Request,Thread Group 1-2,text,false,,309,269,1,1,http://localhost:3000/api/auth/register,44,0,0
+1774949454346,156,Login Test,200,OK,Thread Group 1-2,text,true,,568,247,1,1,http://localhost:3000/api/auth/login,156,0,0
+1774949454503,44,Registration Test,400,Bad Request,Thread Group 1-2,text,false,,309,269,1,1,http://localhost:3000/api/auth/register,44,0,0
