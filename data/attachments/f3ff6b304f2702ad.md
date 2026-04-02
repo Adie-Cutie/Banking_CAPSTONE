@@ -1,0 +1,445 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - complementary [ref=e5]:
+    - generic [ref=e6]:
+      - img [ref=e7]
+      - heading "IBM BANK" [level=1] [ref=e10]
+    - navigation [ref=e11]:
+      - button "Overview" [ref=e12]:
+        - img [ref=e13]
+        - text: Overview
+      - button "History" [active] [ref=e16]:
+        - img [ref=e17]
+        - text: History
+    - button "Logout" [ref=e21]:
+      - img [ref=e22]
+      - text: Logout
+  - main [ref=e25]:
+    - generic [ref=e26]:
+      - generic [ref=e27]:
+        - heading "Hello, John Doe 👋" [level=2] [ref=e28]
+        - paragraph [ref=e29]: "Acc: 4141587793"
+      - button "Send Money" [ref=e30]:
+        - img [ref=e31]
+        - text: Send Money
+    - generic [ref=e34]:
+      - generic [ref=e35]:
+        - heading "Transaction History" [level=3] [ref=e36]
+        - paragraph [ref=e37]: 58 Total Records
+      - table [ref=e40]:
+        - rowgroup [ref=e41]:
+          - row "Type Party Date Amount" [ref=e42]:
+            - columnheader "Type" [ref=e43]
+            - columnheader "Party" [ref=e44]
+            - columnheader "Date" [ref=e45]
+            - columnheader "Amount" [ref=e46]
+        - rowgroup [ref=e47]:
+          - row "transfer Adityaaa 4/1/2026 -$10" [ref=e48]:
+            - cell "transfer" [ref=e49]:
+              - img [ref=e50]
+              - text: transfer
+            - cell "Adityaaa" [ref=e53]
+            - cell "4/1/2026" [ref=e54]
+            - cell "-$10" [ref=e55]
+          - row "transfer Aditi 4/1/2026 -$25" [ref=e56]:
+            - cell "transfer" [ref=e57]:
+              - img [ref=e58]
+              - text: transfer
+            - cell "Aditi" [ref=e61]
+            - cell "4/1/2026" [ref=e62]
+            - cell "-$25" [ref=e63]
+          - row "transfer Adityaaa 4/1/2026 -$10" [ref=e64]:
+            - cell "transfer" [ref=e65]:
+              - img [ref=e66]
+              - text: transfer
+            - cell "Adityaaa" [ref=e69]
+            - cell "4/1/2026" [ref=e70]
+            - cell "-$10" [ref=e71]
+          - row "transfer Aditi 4/1/2026 -$25" [ref=e72]:
+            - cell "transfer" [ref=e73]:
+              - img [ref=e74]
+              - text: transfer
+            - cell "Aditi" [ref=e77]
+            - cell "4/1/2026" [ref=e78]
+            - cell "-$25" [ref=e79]
+          - row "transfer Adityaaa 4/1/2026 -$10" [ref=e80]:
+            - cell "transfer" [ref=e81]:
+              - img [ref=e82]
+              - text: transfer
+            - cell "Adityaaa" [ref=e85]
+            - cell "4/1/2026" [ref=e86]
+            - cell "-$10" [ref=e87]
+          - row "transfer Aditi 4/1/2026 -$25" [ref=e88]:
+            - cell "transfer" [ref=e89]:
+              - img [ref=e90]
+              - text: transfer
+            - cell "Aditi" [ref=e93]
+            - cell "4/1/2026" [ref=e94]
+            - cell "-$25" [ref=e95]
+          - row "transfer Aditi 4/1/2026 -$1" [ref=e96]:
+            - cell "transfer" [ref=e97]:
+              - img [ref=e98]
+              - text: transfer
+            - cell "Aditi" [ref=e101]
+            - cell "4/1/2026" [ref=e102]
+            - cell "-$1" [ref=e103]
+          - row "transfer Aditi 4/1/2026 -$10.55" [ref=e104]:
+            - cell "transfer" [ref=e105]:
+              - img [ref=e106]
+              - text: transfer
+            - cell "Aditi" [ref=e109]
+            - cell "4/1/2026" [ref=e110]
+            - cell "-$10.55" [ref=e111]
+          - row "transfer Aditi 4/1/2026 -$1" [ref=e112]:
+            - cell "transfer" [ref=e113]:
+              - img [ref=e114]
+              - text: transfer
+            - cell "Aditi" [ref=e117]
+            - cell "4/1/2026" [ref=e118]
+            - cell "-$1" [ref=e119]
+          - row "transfer Aditi 4/1/2026 -$10.55" [ref=e120]:
+            - cell "transfer" [ref=e121]:
+              - img [ref=e122]
+              - text: transfer
+            - cell "Aditi" [ref=e125]
+            - cell "4/1/2026" [ref=e126]
+            - cell "-$10.55" [ref=e127]
+          - row "transfer Aditi 3/31/2026 -$1" [ref=e128]:
+            - cell "transfer" [ref=e129]:
+              - img [ref=e130]
+              - text: transfer
+            - cell "Aditi" [ref=e133]
+            - cell "3/31/2026" [ref=e134]
+            - cell "-$1" [ref=e135]
+          - row "transfer Adityaaa 3/31/2026 -$10" [ref=e136]:
+            - cell "transfer" [ref=e137]:
+              - img [ref=e138]
+              - text: transfer
+            - cell "Adityaaa" [ref=e141]
+            - cell "3/31/2026" [ref=e142]
+            - cell "-$10" [ref=e143]
+          - row "transfer Aditi 3/31/2026 -$25" [ref=e144]:
+            - cell "transfer" [ref=e145]:
+              - img [ref=e146]
+              - text: transfer
+            - cell "Aditi" [ref=e149]
+            - cell "3/31/2026" [ref=e150]
+            - cell "-$25" [ref=e151]
+          - row "transfer Adityaaa 3/31/2026 -$10" [ref=e152]:
+            - cell "transfer" [ref=e153]:
+              - img [ref=e154]
+              - text: transfer
+            - cell "Adityaaa" [ref=e157]
+            - cell "3/31/2026" [ref=e158]
+            - cell "-$10" [ref=e159]
+          - row "transfer Aditi 3/31/2026 -$25" [ref=e160]:
+            - cell "transfer" [ref=e161]:
+              - img [ref=e162]
+              - text: transfer
+            - cell "Aditi" [ref=e165]
+            - cell "3/31/2026" [ref=e166]
+            - cell "-$25" [ref=e167]
+          - row "transfer Adityaaa 3/31/2026 -$10" [ref=e168]:
+            - cell "transfer" [ref=e169]:
+              - img [ref=e170]
+              - text: transfer
+            - cell "Adityaaa" [ref=e173]
+            - cell "3/31/2026" [ref=e174]
+            - cell "-$10" [ref=e175]
+          - row "transfer Aditi 3/31/2026 -$25" [ref=e176]:
+            - cell "transfer" [ref=e177]:
+              - img [ref=e178]
+              - text: transfer
+            - cell "Aditi" [ref=e181]
+            - cell "3/31/2026" [ref=e182]
+            - cell "-$25" [ref=e183]
+          - row "transfer Aditi 3/31/2026 -$25" [ref=e184]:
+            - cell "transfer" [ref=e185]:
+              - img [ref=e186]
+              - text: transfer
+            - cell "Aditi" [ref=e189]
+            - cell "3/31/2026" [ref=e190]
+            - cell "-$25" [ref=e191]
+          - row "transfer Adityaaa 3/30/2026 -$10" [ref=e192]:
+            - cell "transfer" [ref=e193]:
+              - img [ref=e194]
+              - text: transfer
+            - cell "Adityaaa" [ref=e197]
+            - cell "3/30/2026" [ref=e198]
+            - cell "-$10" [ref=e199]
+          - row "transfer Adityaaa 3/30/2026 -$10" [ref=e200]:
+            - cell "transfer" [ref=e201]:
+              - img [ref=e202]
+              - text: transfer
+            - cell "Adityaaa" [ref=e205]
+            - cell "3/30/2026" [ref=e206]
+            - cell "-$10" [ref=e207]
+          - row "transfer Adityaaa 3/30/2026 -$10" [ref=e208]:
+            - cell "transfer" [ref=e209]:
+              - img [ref=e210]
+              - text: transfer
+            - cell "Adityaaa" [ref=e213]
+            - cell "3/30/2026" [ref=e214]
+            - cell "-$10" [ref=e215]
+          - row "transfer Adityaaa 3/30/2026 -$10" [ref=e216]:
+            - cell "transfer" [ref=e217]:
+              - img [ref=e218]
+              - text: transfer
+            - cell "Adityaaa" [ref=e221]
+            - cell "3/30/2026" [ref=e222]
+            - cell "-$10" [ref=e223]
+          - row "transfer Aditi 3/30/2026 -$25" [ref=e224]:
+            - cell "transfer" [ref=e225]:
+              - img [ref=e226]
+              - text: transfer
+            - cell "Aditi" [ref=e229]
+            - cell "3/30/2026" [ref=e230]
+            - cell "-$25" [ref=e231]
+          - row "transfer Adityaaa 3/30/2026 -$10" [ref=e232]:
+            - cell "transfer" [ref=e233]:
+              - img [ref=e234]
+              - text: transfer
+            - cell "Adityaaa" [ref=e237]
+            - cell "3/30/2026" [ref=e238]
+            - cell "-$10" [ref=e239]
+          - row "transfer Aditi 3/30/2026 -$25" [ref=e240]:
+            - cell "transfer" [ref=e241]:
+              - img [ref=e242]
+              - text: transfer
+            - cell "Aditi" [ref=e245]
+            - cell "3/30/2026" [ref=e246]
+            - cell "-$25" [ref=e247]
+          - row "transfer Adityaaa 3/30/2026 -$10" [ref=e248]:
+            - cell "transfer" [ref=e249]:
+              - img [ref=e250]
+              - text: transfer
+            - cell "Adityaaa" [ref=e253]
+            - cell "3/30/2026" [ref=e254]
+            - cell "-$10" [ref=e255]
+          - row "transfer Aditi 3/30/2026 -$25" [ref=e256]:
+            - cell "transfer" [ref=e257]:
+              - img [ref=e258]
+              - text: transfer
+            - cell "Aditi" [ref=e261]
+            - cell "3/30/2026" [ref=e262]
+            - cell "-$25" [ref=e263]
+          - row "transfer Adityaaa 3/30/2026 -$75" [ref=e264]:
+            - cell "transfer" [ref=e265]:
+              - img [ref=e266]
+              - text: transfer
+            - cell "Adityaaa" [ref=e269]
+            - cell "3/30/2026" [ref=e270]
+            - cell "-$75" [ref=e271]
+          - row "transfer Aditi 3/30/2026 -$25" [ref=e272]:
+            - cell "transfer" [ref=e273]:
+              - img [ref=e274]
+              - text: transfer
+            - cell "Aditi" [ref=e277]
+            - cell "3/30/2026" [ref=e278]
+            - cell "-$25" [ref=e279]
+          - row "transfer Adityaaa 3/30/2026 -$75" [ref=e280]:
+            - cell "transfer" [ref=e281]:
+              - img [ref=e282]
+              - text: transfer
+            - cell "Adityaaa" [ref=e285]
+            - cell "3/30/2026" [ref=e286]
+            - cell "-$75" [ref=e287]
+          - row "transfer Aditi 3/30/2026 -$25" [ref=e288]:
+            - cell "transfer" [ref=e289]:
+              - img [ref=e290]
+              - text: transfer
+            - cell "Aditi" [ref=e293]
+            - cell "3/30/2026" [ref=e294]
+            - cell "-$25" [ref=e295]
+          - row "transfer Adityaaa 3/30/2026 -$75" [ref=e296]:
+            - cell "transfer" [ref=e297]:
+              - img [ref=e298]
+              - text: transfer
+            - cell "Adityaaa" [ref=e301]
+            - cell "3/30/2026" [ref=e302]
+            - cell "-$75" [ref=e303]
+          - row "transfer Aditi 3/30/2026 -$25" [ref=e304]:
+            - cell "transfer" [ref=e305]:
+              - img [ref=e306]
+              - text: transfer
+            - cell "Aditi" [ref=e309]
+            - cell "3/30/2026" [ref=e310]
+            - cell "-$25" [ref=e311]
+          - row "transfer Aditi 3/30/2026 -$1" [ref=e312]:
+            - cell "transfer" [ref=e313]:
+              - img [ref=e314]
+              - text: transfer
+            - cell "Aditi" [ref=e317]
+            - cell "3/30/2026" [ref=e318]
+            - cell "-$1" [ref=e319]
+          - row "transfer Aditi 3/30/2026 -$10.55" [ref=e320]:
+            - cell "transfer" [ref=e321]:
+              - img [ref=e322]
+              - text: transfer
+            - cell "Aditi" [ref=e325]
+            - cell "3/30/2026" [ref=e326]
+            - cell "-$10.55" [ref=e327]
+          - row "transfer Aditi 3/30/2026 -$1" [ref=e328]:
+            - cell "transfer" [ref=e329]:
+              - img [ref=e330]
+              - text: transfer
+            - cell "Aditi" [ref=e333]
+            - cell "3/30/2026" [ref=e334]
+            - cell "-$1" [ref=e335]
+          - row "transfer Aditi 3/30/2026 -$10.55" [ref=e336]:
+            - cell "transfer" [ref=e337]:
+              - img [ref=e338]
+              - text: transfer
+            - cell "Aditi" [ref=e341]
+            - cell "3/30/2026" [ref=e342]
+            - cell "-$10.55" [ref=e343]
+          - row "transfer Aditi 3/30/2026 -$1" [ref=e344]:
+            - cell "transfer" [ref=e345]:
+              - img [ref=e346]
+              - text: transfer
+            - cell "Aditi" [ref=e349]
+            - cell "3/30/2026" [ref=e350]
+            - cell "-$1" [ref=e351]
+          - row "transfer Aditi 3/30/2026 -$10.55" [ref=e352]:
+            - cell "transfer" [ref=e353]:
+              - img [ref=e354]
+              - text: transfer
+            - cell "Aditi" [ref=e357]
+            - cell "3/30/2026" [ref=e358]
+            - cell "-$10.55" [ref=e359]
+          - row "transfer Adityaaa 3/30/2026 -$10" [ref=e360]:
+            - cell "transfer" [ref=e361]:
+              - img [ref=e362]
+              - text: transfer
+            - cell "Adityaaa" [ref=e365]
+            - cell "3/30/2026" [ref=e366]
+            - cell "-$10" [ref=e367]
+          - row "transfer Aditi 3/30/2026 -$25" [ref=e368]:
+            - cell "transfer" [ref=e369]:
+              - img [ref=e370]
+              - text: transfer
+            - cell "Aditi" [ref=e373]
+            - cell "3/30/2026" [ref=e374]
+            - cell "-$25" [ref=e375]
+          - row "transfer Adityaaa 3/30/2026 -$75" [ref=e376]:
+            - cell "transfer" [ref=e377]:
+              - img [ref=e378]
+              - text: transfer
+            - cell "Adityaaa" [ref=e381]
+            - cell "3/30/2026" [ref=e382]
+            - cell "-$75" [ref=e383]
+          - row "transfer Adityaaa 3/30/2026 -$75" [ref=e384]:
+            - cell "transfer" [ref=e385]:
+              - img [ref=e386]
+              - text: transfer
+            - cell "Adityaaa" [ref=e389]
+            - cell "3/30/2026" [ref=e390]
+            - cell "-$75" [ref=e391]
+          - row "transfer Adityaaa 3/30/2026 -$20" [ref=e392]:
+            - cell "transfer" [ref=e393]:
+              - img [ref=e394]
+              - text: transfer
+            - cell "Adityaaa" [ref=e397]
+            - cell "3/30/2026" [ref=e398]
+            - cell "-$20" [ref=e399]
+          - row "transfer Adityaaa 3/30/2026 -$20" [ref=e400]:
+            - cell "transfer" [ref=e401]:
+              - img [ref=e402]
+              - text: transfer
+            - cell "Adityaaa" [ref=e405]
+            - cell "3/30/2026" [ref=e406]
+            - cell "-$20" [ref=e407]
+          - row "transfer Adityaaa 3/30/2026 -$75" [ref=e408]:
+            - cell "transfer" [ref=e409]:
+              - img [ref=e410]
+              - text: transfer
+            - cell "Adityaaa" [ref=e413]
+            - cell "3/30/2026" [ref=e414]
+            - cell "-$75" [ref=e415]
+          - row "transfer Adityaaa 3/30/2026 -$75" [ref=e416]:
+            - cell "transfer" [ref=e417]:
+              - img [ref=e418]
+              - text: transfer
+            - cell "Adityaaa" [ref=e421]
+            - cell "3/30/2026" [ref=e422]
+            - cell "-$75" [ref=e423]
+          - row "transfer Aditi 3/24/2026 -$1,234" [ref=e424]:
+            - cell "transfer" [ref=e425]:
+              - img [ref=e426]
+              - text: transfer
+            - cell "Aditi" [ref=e429]
+            - cell "3/24/2026" [ref=e430]
+            - cell "-$1,234" [ref=e431]
+          - row "transfer Aditi 3/24/2026 -$1,234" [ref=e432]:
+            - cell "transfer" [ref=e433]:
+              - img [ref=e434]
+              - text: transfer
+            - cell "Aditi" [ref=e437]
+            - cell "3/24/2026" [ref=e438]
+            - cell "-$1,234" [ref=e439]
+          - row "transfer Aditi 3/24/2026 -$100,000" [ref=e440]:
+            - cell "transfer" [ref=e441]:
+              - img [ref=e442]
+              - text: transfer
+            - cell "Aditi" [ref=e445]
+            - cell "3/24/2026" [ref=e446]
+            - cell "-$100,000" [ref=e447]
+          - row "transfer John Doe 3/24/2026 -$1" [ref=e448]:
+            - cell "transfer" [ref=e449]:
+              - img [ref=e450]
+              - text: transfer
+            - cell "John Doe" [ref=e453]
+            - cell "3/24/2026" [ref=e454]
+            - cell "-$1" [ref=e455]
+          - row "transfer Aditi 3/24/2026 +$35" [ref=e456]:
+            - cell "transfer" [ref=e457]:
+              - img [ref=e458]
+              - text: transfer
+            - cell "Aditi" [ref=e461]
+            - cell "3/24/2026" [ref=e462]
+            - cell "+$35" [ref=e463]
+          - row "transfer Aditi 3/24/2026 +$5" [ref=e464]:
+            - cell "transfer" [ref=e465]:
+              - img [ref=e466]
+              - text: transfer
+            - cell "Aditi" [ref=e469]
+            - cell "3/24/2026" [ref=e470]
+            - cell "+$5" [ref=e471]
+          - row "transfer Aditi 3/24/2026 +$5" [ref=e472]:
+            - cell "transfer" [ref=e473]:
+              - img [ref=e474]
+              - text: transfer
+            - cell "Aditi" [ref=e477]
+            - cell "3/24/2026" [ref=e478]
+            - cell "+$5" [ref=e479]
+          - row "transfer Aditi 3/24/2026 +$2" [ref=e480]:
+            - cell "transfer" [ref=e481]:
+              - img [ref=e482]
+              - text: transfer
+            - cell "Aditi" [ref=e485]
+            - cell "3/24/2026" [ref=e486]
+            - cell "+$2" [ref=e487]
+          - row "transfer Aditi 3/24/2026 +$2" [ref=e488]:
+            - cell "transfer" [ref=e489]:
+              - img [ref=e490]
+              - text: transfer
+            - cell "Aditi" [ref=e493]
+            - cell "3/24/2026" [ref=e494]
+            - cell "+$2" [ref=e495]
+          - row "transfer Aditi 3/24/2026 +$1" [ref=e496]:
+            - cell "transfer" [ref=e497]:
+              - img [ref=e498]
+              - text: transfer
+            - cell "Aditi" [ref=e501]
+            - cell "3/24/2026" [ref=e502]
+            - cell "+$1" [ref=e503]
+          - row "transfer Aditi 3/24/2026 -$250" [ref=e504]:
+            - cell "transfer" [ref=e505]:
+              - img [ref=e506]
+              - text: transfer
+            - cell "Aditi" [ref=e509]
+            - cell "3/24/2026" [ref=e510]
+            - cell "-$250" [ref=e511]
+```
