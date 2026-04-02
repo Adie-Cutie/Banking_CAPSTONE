@@ -19,7 +19,7 @@ test.describe('Transfer API - IBM BANK (Dynamic Logic)', () => {
         initialBalance = loginBody.user.balance; 
     });
 
-    test('API-TR-06: Valid Transfer and Balance Deduction', async ({ request }) => {
+    test('API-TR-01: Valid Transfer and Balance Deduction', async ({ request }) => {
         const transferAmount = 25;
         const payload = {
             receiverAccountNumber: "8840286830",
@@ -42,7 +42,7 @@ test.describe('Transfer API - IBM BANK (Dynamic Logic)', () => {
         initialBalance = body.newBalance;
     });
 
-    test('API-TR-07: Reject Transfer if Amount > newBalance', async ({ request }) => {
+    test('API-TR-02: Reject Transfer if Amount > newBalance', async ({ request }) => {
         // Attempt to send more than what we currently have (initialBalance is now 750)
         const response = await request.post(`${BASE_URL}/transactions/transfer`, {
             headers: { 'Authorization': `Bearer ${authToken}` },
@@ -57,13 +57,13 @@ test.describe('Transfer API - IBM BANK (Dynamic Logic)', () => {
         const body = await response.json();
         expect(body.message).toMatch(/insufficient funds/i);
     });
-    test('API-TR-08: Block Transfer with No Token', async ({ request }) => {
+    test('API-TR-03: Block Transfer with No Token', async ({ request }) => {
         const response = await request.post(`${BASE_URL}/transactions/transfer`, {
             data: { receiverAccountNumber: "8840286830", amount: 10 }
         });
         expect(response.status()).toBe(401);
     });
-    test('API-TR-09: Reject Non-Numeric Account Number', async ({ request }) => {
+    test('API-TR-04: Reject Non-Numeric Account Number', async ({ request }) => {
         const response = await request.post(`${BASE_URL}/transactions/transfer`, {
             headers: { 'Authorization': `Bearer ${authToken}` },
             data: { receiverAccountNumber: "ABC-123-XYZ", amount: 10 }

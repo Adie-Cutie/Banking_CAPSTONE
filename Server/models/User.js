@@ -37,7 +37,7 @@ const userSchema = new mongoose.Schema({
     // Generates a random 10-digit string
     default: () => Math.floor(1000000000 + Math.random() * 9000000000).toString() 
   },
-  balance: { type: Number, default: 1000 } // Giving them $1000 starting bonus!
+  balance: { type: Number, default: 1000 },
 }, { timestamps: true });
 
 module.exports = mongoose.model('User', userSchema);
