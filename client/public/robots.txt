@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemaps are optional but good for SEO
+Sitemap: http://http:localhost:4173/sitemap.xml

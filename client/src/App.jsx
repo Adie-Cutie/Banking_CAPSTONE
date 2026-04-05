@@ -1,7 +1,8 @@
 import React from 'react';
+import { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import Auth from './pages/Auth';
-import Dashboard from './pages/Dashboard';
+const Dashboard = lazy(() => import('./pages/Dashboard'));
+const Auth = lazy(() => import('./pages/Auth'));
 
 // This wrapper checks if a user is logged in before showing the Dashboard
 const PrivateRoute = ({ children }) => {
@@ -11,7 +12,7 @@ const PrivateRoute = ({ children }) => {
 
 function App() {
   return (
-    <Router>
+    <Suspense><Router>
       <div className="min-h-screen bg-darkBg selection:bg-accent selection:text-darkBg">
         <Routes>
           {/* Landing/Login Page */}
@@ -31,7 +32,7 @@ function App() {
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>
-    </Router>
+    </Router></Suspense>
   );
 }
 
