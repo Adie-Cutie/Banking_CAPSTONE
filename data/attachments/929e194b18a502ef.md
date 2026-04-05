@@ -1,0 +1,70 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - complementary [ref=e5]:
+    - generic [ref=e6]:
+      - img [ref=e7]
+      - heading "IBM BANK" [level=1] [ref=e10]
+    - navigation [ref=e11]:
+      - button "Overview" [ref=e12]:
+        - img [ref=e13]
+        - text: Overview
+      - button "History" [ref=e16]:
+        - img [ref=e17]
+        - text: History
+    - button "Logout" [ref=e21]:
+      - img [ref=e22]
+      - text: Logout
+  - main [ref=e25]:
+    - generic [ref=e26]:
+      - generic [ref=e27]:
+        - heading "Hello, John Doe 👋" [level=2] [ref=e28]
+        - paragraph [ref=e29]: "Acc: 4141587793"
+      - button "Send Money" [ref=e30]:
+        - img [ref=e31]
+        - text: Send Money
+    - generic [ref=e34]:
+      - generic [ref=e35]:
+        - generic [ref=e36]:
+          - paragraph [ref=e37]: Total Balance
+          - heading "$7,501,121,894.25" [level=3] [ref=e38]
+        - generic [ref=e39]:
+          - generic [ref=e40]:
+            - paragraph [ref=e41]: Income
+            - heading "+$51" [level=4] [ref=e42]
+          - img [ref=e44]
+        - generic [ref=e47]:
+          - generic [ref=e48]:
+            - paragraph [ref=e49]: Expenses
+            - heading "-$103,892.75" [level=4] [ref=e50]
+          - img [ref=e52]
+      - generic [ref=e55]:
+        - generic [ref=e56]: Recent Activity
+        - table [ref=e57]:
+          - rowgroup [ref=e58]:
+            - row "transfer -$10" [ref=e59]:
+              - cell "transfer" [ref=e60]:
+                - img [ref=e61]
+                - generic [ref=e64]: transfer
+              - cell "-$10" [ref=e65]
+            - row "transfer -$25" [ref=e66]:
+              - cell "transfer" [ref=e67]:
+                - img [ref=e68]
+                - generic [ref=e71]: transfer
+              - cell "-$25" [ref=e72]
+            - row "transfer -$10" [ref=e73]:
+              - cell "transfer" [ref=e74]:
+                - img [ref=e75]
+                - generic [ref=e78]: transfer
+              - cell "-$10" [ref=e79]
+        - button "View All History" [ref=e80]
+  - generic [ref=e82]:
+    - heading "Transfer Funds" [level=3] [ref=e83]
+    - generic [ref=e84]:
+      - textbox "Account Number" [ref=e85]: "9876543210"
+      - spinbutton [ref=e86]: "10"
+      - generic [ref=e87]:
+        - button "Cancel" [ref=e88]
+        - button "Confirm" [ref=e89]
+```
