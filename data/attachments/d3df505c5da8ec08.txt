@@ -1,0 +1,29 @@
+[
+  {
+    id: 'landmark-one-main',
+    impact: 'moderate',
+    tags: [ 'cat.semantics', 'best-practice' ],
+    description: 'Ensure the document has a main landmark',
+    help: 'Document should have one main landmark',
+    helpUrl: 'https://dequeuniversity.com/rules/axe/4.11/landmark-one-main?application=playwright',
+    nodes: [ [Object] ]
+  },
+  {
+    id: 'page-has-heading-one',
+    impact: 'moderate',
+    tags: [ 'cat.semantics', 'best-practice' ],
+    description: 'Ensure that the page, or at least one of its frames contains a level-one heading',
+    help: 'Page should contain a level-one heading',
+    helpUrl: 'https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright',
+    nodes: [ [Object] ]
+  },
+  {
+    id: 'region',
+    impact: 'moderate',
+    tags: [ 'cat.keyboard', 'best-practice', 'RGAAv4', 'RGAA-9.2.1' ],
+    description: 'Ensure all page content is contained by landmarks',
+    help: 'All page content should be contained by landmarks',
+    helpUrl: 'https://dequeuniversity.com/rules/axe/4.11/region?application=playwright',
+    nodes: [ [Object], [Object], [Object], [Object], [Object] ]
+  }
+]
