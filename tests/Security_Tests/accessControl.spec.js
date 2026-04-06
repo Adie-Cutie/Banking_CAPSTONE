@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test.describe('IBM Bank - Access Control & IDOR Suite (SEC 21-30)', () => {
+test.describe('IBM Bank - Access Control & IDOR Suite', () => {
 
     test.beforeEach(async ({ page }) => {
         await page.goto('http://localhost:5173');

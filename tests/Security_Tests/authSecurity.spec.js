@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test.describe('IBM Bank - Authentication Security Suite (SEC 01-10)', () => {
+test.describe('IBM Bank - Authentication Security Suite ', () => {
 
     test.beforeEach(async ({ page }) => {
         await page.goto('http://localhost:5173');
