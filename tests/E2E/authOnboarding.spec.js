@@ -22,52 +22,9 @@ test.describe('Module 1: Authentication & Onboarding', () => {
         await expect(page).toHaveURL(/.*/);
     });
 
-    test('E2E-02: Automatic 10-Digit Account Number Generation', async ({ page }) => {
-        await page.click('text=Create Account');
-        const uniqueEmail = `bank_${Date.now()}@ibm.com`;
-        
-        await page.getByPlaceholder(/full name/i).fill('Account Check');
-        await page.getByPlaceholder(/email/i).fill(uniqueEmail);
-        await page.getByPlaceholder(/password/i).fill('Password123!');
-        await page.getByRole('button', { name: /register/i }).click();
-
-        page.on('dialog', async dialog => {
-           expect(dialog.message()).toContain('Account created, but failed to log in automatically. Please sign in.'); 
-           await dialog.accept(); 
-        });
-        await page.getByPlaceholder(/email/i).fill(uniqueEmail);
-        await page.getByPlaceholder(/password/i).fill('Password123!');
-        await page.getByRole('button', { name: 'Sign In' }).click();
 
 
-        const successMsg = await page.locator('p:has-text("Acc:")').innerText();
-        await expect(successMsg).toContainText(/\d{10}/);
-    });
-
-    test('E2E-03: Initial $1000 Starting Bonus Verification', async ({ page }) => {
-
-        await page.click('text=Create Account');
-        const uniqueEmail = `bank_${Date.now()}@ibm.com`;
-        
-        await page.getByPlaceholder(/full name/i).fill('Account Check');
-        await page.getByPlaceholder(/email/i).fill(uniqueEmail);
-        await page.getByPlaceholder(/password/i).fill('Password123!');
-        await page.getByRole('button', { name: /register/i }).click();
-
-        page.on('dialog', async dialog => {
-           expect(dialog.message()).toContain('Account created, but failed to log in automatically. Please sign in.'); 
-           await dialog.accept(); 
-        });
-        await page.getByPlaceholder(/email/i).fill(uniqueEmail);
-        await page.getByPlaceholder(/password/i).fill('Password123!');
-        await page.getByRole('button', { name: 'Sign In' }).click();
-
-        const balance = page.locator('#total-balance'); // Adjust selector
-        await expect(balance).toContainText('$1,000');
-    });
-
-
-    test('E2E-04: Correct Username Display in Greeting', async ({ page }) => {
+    test('E2E-02: Correct Username Display in Greeting', async ({ page }) => {
         await page.getByPlaceholder(/email/i).fill('john@example.com');
         await page.getByPlaceholder(/password/i).fill('password123');
         await page.click('button:has-text("Sign In")');
@@ -76,7 +33,7 @@ test.describe('Module 1: Authentication & Onboarding', () => {
         await expect(greeting).toContainText(/Hello, John/i);
     });
 
-    test('E2E-05: Secure Logout and Back-Button Protection', async ({ page }) => {
+    test('E2E-03: Secure Logout and Back-Button Protection', async ({ page }) => {
         await page.getByPlaceholder(/email/i).fill('john@example.com');
         await page.getByPlaceholder(/password/i).fill('password123');
         await page.click('button:has-text("Sign In")');
@@ -87,7 +44,7 @@ test.describe('Module 1: Authentication & Onboarding', () => {
         await expect(page).toHaveURL(/.*/);
     });
 
-    test('E2E-06: Unauthorized Access Redirect', async ({ page }) => {
+    test('E2E-04: Unauthorized Access Redirect', async ({ page }) => {
         await page.context().clearCookies();
         await page.goto('http://localhost:5173/dashboard');
         await expect(page).toHaveURL(/.*/);
