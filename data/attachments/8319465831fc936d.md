@@ -1,0 +1,46 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - complementary [ref=e5]:
+    - generic [ref=e6]:
+      - img [ref=e7]
+      - heading "IBM BANK" [level=1] [ref=e10]
+    - navigation [ref=e11]:
+      - button "Overview" [ref=e12]:
+        - img [ref=e13]
+        - text: Overview
+      - button "History" [active] [ref=e16]:
+        - img [ref=e17]
+        - text: History
+    - button "Logout" [ref=e21]:
+      - img [ref=e22]
+      - text: Logout
+  - main [ref=e25]:
+    - generic [ref=e26]:
+      - generic [ref=e27]:
+        - heading "Hello, Test User 👋" [level=2] [ref=e28]
+        - paragraph [ref=e29]: "Acc: 2354461571"
+      - button "Send Money" [ref=e30]:
+        - img [ref=e31]
+        - text: Send Money
+    - generic [ref=e34]:
+      - generic [ref=e35]:
+        - heading "Transaction History" [level=3] [ref=e36]
+        - paragraph [ref=e37]: 1 Total Records
+      - table [ref=e40]:
+        - rowgroup [ref=e41]:
+          - row "Type Party Date Amount" [ref=e42]:
+            - columnheader "Type" [ref=e43]
+            - columnheader "Party" [ref=e44]
+            - columnheader "Date" [ref=e45]
+            - columnheader "Amount" [ref=e46]
+        - rowgroup [ref=e47]:
+          - row "transfer John Doe 4/7/2026 -$1" [ref=e48]:
+            - cell "transfer" [ref=e49]:
+              - img [ref=e50]
+              - text: transfer
+            - cell "John Doe" [ref=e53]
+            - cell "4/7/2026" [ref=e54]
+            - cell "-$1" [ref=e55]
+```
