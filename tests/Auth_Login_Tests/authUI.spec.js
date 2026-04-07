@@ -17,7 +17,7 @@ test.describe('Auth Module - UI Tests', () => {
     await page.click('button:has-text("Sign In")');
     
     page.on('dialog', async dialog => {
-      expect(dialog.message()).toContain('Invalid credentials'); 
+      expect(dialog.message()).toContain('Invalid Credentials'); 
       await dialog.accept(); 
     });
   });

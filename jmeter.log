@@ -245,3 +245,44 @@
 2026-04-07 09:21:11,104 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-10
 2026-04-07 09:21:11,104 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
 2026-04-07 09:21:11,105 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2026-04-07 09:24:20,645 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-04-07 09:24:20,646 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-04-07 09:24:20,647 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2026-04-07 09:24:20,706 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2026-04-07 09:24:20,707 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group Thread Group.
+2026-04-07 09:24:20,707 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-04-07 09:24:20,707 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=10 ramp-up=1 delayedStart=false
+2026-04-07 09:24:20,708 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2026-04-07 09:24:20,709 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-04-07 09:24:20,709 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-04-07 09:24:20,816 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2026-04-07 09:24:20,913 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-3
+2026-04-07 09:24:21,012 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-4
+2026-04-07 09:24:21,113 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-5
+2026-04-07 09:24:21,212 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-6
+2026-04-07 09:24:21,313 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-7
+2026-04-07 09:24:21,414 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-8
+2026-04-07 09:24:21,512 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-9
+2026-04-07 09:24:21,612 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-10
+2026-04-07 09:24:30,621 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2026-04-07 09:24:30,621 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2026-04-07 09:24:30,977 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2026-04-07 09:24:30,977 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2026-04-07 09:24:31,306 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-8
+2026-04-07 09:24:31,306 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-8
+2026-04-07 09:24:31,327 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-4
+2026-04-07 09:24:31,327 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-4
+2026-04-07 09:24:31,549 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-9
+2026-04-07 09:24:31,550 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-9
+2026-04-07 09:24:31,796 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-10
+2026-04-07 09:24:31,796 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-10
+2026-04-07 09:24:31,800 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-5
+2026-04-07 09:24:31,801 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-5
+2026-04-07 09:24:31,855 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-7
+2026-04-07 09:24:31,855 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-7
+2026-04-07 09:24:32,401 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-6
+2026-04-07 09:24:32,401 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-6
+2026-04-07 09:25:46,891 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-3
+2026-04-07 09:25:46,891 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-3
+2026-04-07 09:25:46,891 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-04-07 09:25:46,892 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
